@@ -13,6 +13,9 @@ import Section_11 from './z_Section11.jsx';                 //Solicito al Fragme
 import Section_12 from './z_Section12.jsx';                 //Solicito al Fragmento de codigo Section 12
 import Section_21 from './z_Section21.jsx';                 //Solicito al Fragmento de codigo Section 21
 import Section_31 from './z_Section31.jsx';                 //Solicito al Fragmento de codigo Section 31
+import Section_41 from './z_Section41.jsx';                 //Solicito al Fragmento de codigo Section 31
+import Section_51 from './z_Section51.jsx';                 //Solicito al Fragmento de codigo Section 31
+import Section_61 from './z_Section61.jsx';                 //Solicito al Fragmento de codigo Section 31
     
 var Colvar;                                                 //Inicializo variables
 var Pagesel=1;                                              
@@ -76,12 +79,22 @@ class App extends Component {                                 //Genero la clase 
       switch(Pagesel){                                        //Si el valor es el mismo sale del if
         case 2:                                               //Mediante un switch pregunto por el boton presionado
           Htmlvar2 = <div><Section_21/></div>;                //Cargo la aplicacion correspondiente
-        break;
+          break;
         case 3:
           Htmlvar2 = <div><Section_31/></div>;
-        break;
+          break;
+        case 4:
+          Htmlvar2 = <div><Section_41/></div>;
+          break;
+        case 5:
+          Htmlvar2 = <div><Section_51/></div>;
+          break;
+        case 6:
+          Htmlvar2 = <div><Section_61/></div>;
+          break;
         default:
           Htmlvar2 = <div><Section_11/><Section_12/></div>;
+          break;
       }
     }
     this.setState({

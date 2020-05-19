@@ -47,10 +47,11 @@ function Mytable(arg){                              //Inicializo al componente p
 }
 
 class Section31 extends Component {                 //Inicializo al componente
-  render() {                                        //MEdiante el metodo Render envio la siguiente vista
+  render() {       
+    const myheight = ((window.innerHeight)-70) + "px";                                //MEdiante el metodo Render envio la siguiente vista
     return (
       <div >
-        <Card className="m-1" style={{height:"675px", overflow:"auto",backgroundColor:"transparent"}} >
+        <Card className="m-1" style={{height:myheight, overflow:"auto",backgroundColor:"transparent"}} >
           <div data-spy="scroll" data-target="#list-example" data-offset="0" className="scrollspy-example">
             
             <Table className="table-borderless table-sm" style={{width:"99.5%"}}>

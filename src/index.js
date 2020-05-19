@@ -5,7 +5,7 @@ const cors = require('cors');                                       //Solicito C
 const server = express();                                           //Instancio a express para usar sus metodos
                                      
 //Settings
-server.set('port',process.env.PORT || 3000);                        //Declaro una variable con el numero del puerto en formato Express
+server.set('port',process.env.PORT || 3010);                        //Declaro una variable con el numero del puerto en formato Express
 
 //Middlewares
 server.use(express.json());                                         //Utilizo el middleware para usar JSONs
@@ -13,6 +13,7 @@ server.use(cors());                                                 //Utilizo el
 //Middleware only production                                        //desde cualquier URL
 const compression = require('compression');                           //Solicito metodo de compression para usar Gzips
 server.use(compression());                                          //Utilizo a compresison
+
 server.get('*.js', function(req, res, next) {                       //Mando llamar en vez de los JS a los JS.GZIP
     req.url = req.url + '.gz';
     res.set('Content-Encoding', 'gzip');

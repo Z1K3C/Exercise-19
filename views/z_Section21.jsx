@@ -32,9 +32,10 @@ class Section21 extends Component {                     //Inicializo al componen
     for(var i=0;i<12;i++){
       Gconfig2[i][0]['height']=195;
     }
+    const myheight = ((window.innerHeight)-70) + "px";
     return (
       <div>
-        <Card className="m-1" style={{height:"675px", overflow:"auto",backgroundColor:"transparent"}} >
+        <Card className="m-1" style={{height:myheight, overflow:"auto",backgroundColor:"transparent"}} >
           <div data-spy="scroll" data-target="#list-example" data-offset="0" className="scrollspy-example">
                                                         {/*Mando a llamar al componente personalizado*/}
             <MyGraphArray/>

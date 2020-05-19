@@ -546,7 +546,7 @@ Gconfig[6]= [
 
   }
 ];
-
+/*
 Gconfig[7]= [
   {
       x:  [1,2,3,4,5,6,7,8,9,10],
@@ -780,20 +780,30 @@ Gconfig[9]= [
 
   }
 ];
-
+*/
 for(var i=0;i<50;i++){
   Gconfig[0][0]['x'][i] = i+1;
   Gconfig[0][0]['y'][i] = Math.floor(Math.random() * 100);
+  Gconfig[1][0]['x'][i] = i+1;
+  Gconfig[1][0]['y'][i] = Math.floor(Math.random() * 100);
+  Gconfig[2][0]['x'][i] = i+1;
+  Gconfig[2][0]['y'][i] = Math.floor(Math.random() * 100);
+  Gconfig[3][0]['x'][i] = i+1;
+  Gconfig[3][0]['y'][i] = Math.floor(Math.random() * 100);
+  Gconfig[4][0]['x'][i] = i+1;
+  Gconfig[4][0]['y'][i] = Math.floor(Math.random() * 100);
   Gconfig[5][0]['x'][i] = i+1;
   Gconfig[5][0]['y'][i] = Math.floor(Math.random() * 100);
   Gconfig[6][0]['x'][i] = i+1;
   Gconfig[6][0]['y'][i] = Math.floor(Math.random() * 100);
+  /*
   Gconfig[7][0]['x'][i] = i+1;
   Gconfig[7][0]['y'][i] = Math.floor(Math.random() * 100);
   Gconfig[8][0]['x'][i] = i+1;
   Gconfig[8][0]['y'][i] = Math.floor(Math.random() * 100);
   Gconfig[9][0]['x'][i] = i+1;
   Gconfig[9][0]['y'][i] = Math.floor(Math.random() * 100);
+  */
 }
 
 export default Gconfig;
